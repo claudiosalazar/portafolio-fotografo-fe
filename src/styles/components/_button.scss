@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as *;
+
+a {
+  transition: all 0.2s ease-in-out;
+
+  &.link {
+    color: $link;
+    text-decoration: none;
+
+    &:hover {
+      color: $verde;
+    }
+  }
+}
+
+.btn {
+  border-radius: 4px !important;
+  text-transform: uppercase;
+  font-size: 0.875rem !important;
+
+  &.btn-primary {
+    background-color: $link;
+    color: $blanco-90;
+    border: 1px solid $link;
+
+    &:hover {
+      background-color: $verde;
+      border: 1px solid $verde;
+      color: black;
+    }
+  }
+}

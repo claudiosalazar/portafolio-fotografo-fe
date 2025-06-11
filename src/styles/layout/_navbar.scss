@@ -1,43 +1,63 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .navbar {
-  .nav-link {
-    position: relative;
-    color: $gris !important;
-
-    &:hover {
-      color: $negro !important;
-    }
-
-    &.active {
-      font-weight: 600;
-      color: $negro !important;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        right: 0;
-        height: 2px;
-      }
-    }
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  border-bottom: 1px solid rgb(white, .2);
+  position: relative;
+  z-index: 1000;
+  
+  &.bg-navbar {
+    background-color: rgba(0, 0, 0, .5) !important;
+    // backdrop-filter: blur(10px);
   }
 
-  // Asegurar que el navbar-text también funcione
-  .navbar-text .nav-link {
-    &.active {
-      font-weight: 600;
-      color: $negro !important;
+  .navbar-brand {
+    font-size: 0rem;
+    width: 50px;
+    height: 28px;
+    padding: 0;
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        right: 0;
-        height: 2px;
+    .logo-nk {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='24'%3E%3Cg fill='%23DF0' fill-rule='nonzero'%3E%3Cpath d='M.006 24H7.96V12.926L16.875 24h7.131V0h-7.954v10.594L7.515 0H.006z'/%3E%3Cpath d='M17.006 24h8.24v-5.109l2.112-2.502L32.182 24h9.824l-8.768-13.577L41.83 0h-9.578l-7.007 8.983V0h-8.239z'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      width: 50px;
+      height: 28px;
+    }
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.3rem;
+    margin-bottom: 24px;
+    border-radius: 24px;
+    display: block;
+    letter-spacing: 0.5px;
+    transform: translateZ(0);
+    transition: transform .18s ease;
+    @include animacionBoton;
+
+    @media (min-width: $md) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: inherit;
+    }
+
+    &:hover {
+      span {
+        color: white;
+        @include animacionBotonHover;
       }
+    }
+
+    &.active {
+      color: $verde !important;
     }
   }
 }

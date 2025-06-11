@@ -1,11 +1,17 @@
 // Abstracts
 @use './variables' as *;
+@use './mixins' as *;
 
 // Components
+@use '../components/button' as *;
+@use '../components/card' as *;
 @use '../components/form' as *;
+@use '../components/text' as *;
 
 // Layouts
 @use '../layout/carousel' as *;
+@use '../layout/footer' as *;
+@use '../layout/galeria-inicio' as *;
 @use '../layout/navbar' as *;
 
 // Pages

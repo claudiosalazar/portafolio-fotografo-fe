@@ -20,23 +20,12 @@ body {
 }
 
 body {
-  color: black;
-  background: white;
-  font-family:
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    'Noto Sans',
-    'Liberation Sans',
-    Arial,
-    var(--font-inter),
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji';
+  color: white;
+  background: black;
+  background-image: linear-gradient(159.056deg, #535833 0%, #000000 60%);
+  background-size: auto 800px;
+  background-repeat: no-repeat;
+  font-family: $font-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: grid;

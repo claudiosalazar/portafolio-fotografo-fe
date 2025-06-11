@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { Inter } from 'next/font/google';
+import { Prompt } from 'next/font/google';
 import '@/styles/globals.scss';
 
 // Components
@@ -9,15 +9,16 @@ import { Navbar, Footer } from '@/components/layout';
 // Config
 import { siteConfig } from '@/config/site';
 
-const inter = Inter({
-  variable: '--font-inter',
+const prompt = Prompt({
+  variable: '--PromptFont',
   display: 'swap',
   fallback: ['system-ui', 'sans-serif'],
   subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 // Agrupación de las clases de fuentes
-const fontClasses = `${inter.variable}`;
+const fontClasses = `${prompt.variable}`;
 
 export const metadata: Metadata = {
   title: {

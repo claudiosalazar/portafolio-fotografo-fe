@@ -1,12 +1,31 @@
 @use '../abstracts/variables' as *;
 
 .carousel {
-  .carousel-inner {
-    aspect-ratio: 4 / 3 !important;
-    position: relative;
+  position: absolute;
+  top: -79px;
+  z-index: 0;
+  aspect-ratio: 4 / 3 !important;
 
-    @media ($md < width) {
-      aspect-ratio: 16 / 6 !important;
-    }
+  .texto-bienvenida {
+    position: absolute;
+    bottom: 0;
+    z-index: 3000;
+    width: 60%;
+    margin: 0 0 36px 36px;
   }
+  
+  @media ($md < width) {
+    aspect-ratio: 16 / 8 !important;
+  }
+
+  .control-carousel {
+    position: absolute;
+    z-index: 2000;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+  }
+  
 }

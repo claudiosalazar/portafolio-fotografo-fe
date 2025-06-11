@@ -18,6 +18,7 @@ const nextConfig: NextConfig = {
   sassOptions: {
     includePaths: ['./src/styles'],
     prependData: `@use "src/styles/abstracts/variables" as *;`,
+    quietDeps: true, // Suprime warnings de SCSS en dependencias
   },
 };
 

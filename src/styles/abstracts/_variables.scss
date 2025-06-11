@@ -1,13 +1,20 @@
-// Colores del tema (utilizados)
-$negro: #000;
-$gris: #919191;
+// Colores
+$blanco-50: rgb(255, 255, 255, .5);
+$blanco-90: rgb(255, 255, 255, .9);
+$placeholder: #cbcbcb;
+$rojo: #C5242D;
+$verde: #DDFF00;
+$gris-parrafo: #97998B;
+$verde-sombra: rgb(221, 255, 0, .7);
+$link-menu: #ffffff;
+$link: #7E8F14;
 
-// Media breakpoints (solo el utilizado)
+// Media breakpoints
 $sm: 576px;
 $md: 767px;
 $lg: 992px;
 $xl: 1200px;
-$xxl: 1400px
+$xxl: 1400px;
 
-// Nota: Variables no utilizadas eliminadas para mantener el código limpio
-// Se mantienen solo las variables que están siendo referenciadas en el proyecto
+// Fonts
+$font-base: var(--PromptFont), "Helvetica Neue", system-ui, Helvetica, Arial, sans-serif;

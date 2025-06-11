@@ -1,0 +1,24 @@
+@use './variables' as *;
+
+@mixin animacionBoton {
+  div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 1.2rem 0 $verde;
+    @media (min-width: 992px) {
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+      text-shadow: 0 .8rem 0 $verde;
+    }
+    span {
+      display: block;
+      backface-visibility: hidden;
+      transition: transform 0.18s ease;
+      transform: translateY(0) translateZ(0);
+    }
+  }
+}
+
+@mixin animacionBotonHover {
+  transform: translateY(-0.8rem) translateZ(0);
+}

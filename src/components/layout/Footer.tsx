@@ -1,36 +1,40 @@
-import { BrandLinkedin, BrandInstagram } from 'tabler-icons-react';
+// import { BrandLinkedin, BrandInstagram, BrandTwitter, BrandFacebook } from 'tabler-icons-react';
+import { IconBrandLinkedin, IconBrandInstagram, IconBrandX, IconBrandFacebook } from '@tabler/icons-react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <div className='container-fluid g-0'>
-      <footer className='d-flex flex-wrap justify-content-between align-items-center py-4 px-4 border-top'>
-        <div className='col-md-6 d-flex align-items-center'>
-          <span className='mb-3 mb-md-0 text-body-secondary'>
-            © 2025 - Template Next & Bootstrap. Este proyecto está licenciado
-            bajo la{' '}
-            <a
-              href='https://opensource.org/licenses/MIT'
-              target='_blank'
-              rel='noopener'
-            >
-              Licencia MIT
-            </a>
-            .
-          </span>
-        </div>
-        <ul className='nav col-md-4 justify-content-end list-unstyled d-flex'>
-          <li className='ms-3'>
-            <a className='text-body-secondary' href='#' aria-label='Linkedin'>
-              <BrandLinkedin size={24} />
-            </a>
-          </li>
-          <li className='ms-3'>
-            <a className='text-body-secondary' href='#' aria-label='Facebook'>
-              <BrandInstagram size={24} />
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+    <footer>
+      <small className='d-flex justify-content-center align-items-center'>
+        <span className='d-block pe-0 md:pe-2'>
+          Nikonlas Canons © 2024 - V.1 
+        </span>
+        <span className='d-block'>
+          Desarrollo por <Link href='https://www.claudiosalazar.cl' className="link" target='_blank' rel='noopener noreferrer'>Claudio Salazar</Link>
+        </span>
+      </small>
+      <ul>
+        <li>
+          <Link href="#">
+            <IconBrandFacebook size={24} />
+          </Link>
+        </li>
+        <li>
+          <Link href="#">
+            <IconBrandInstagram size={24} />
+          </Link>
+        </li>
+        <li>
+          <Link href="#">
+            <IconBrandLinkedin size={24} />
+          </Link>
+        </li>
+        <li>
+          <Link href="#">
+            <IconBrandX size={24} />
+          </Link>
+        </li>
+      </ul>
+    </footer>
   );
 }

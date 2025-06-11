@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as *;
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  @media (min-width: $lg) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &.imagen1 { 
+      grid-area: 1 / 1 / 2 / 3;
+      border-radius: 8px 8px 0 0;
+      @media (min-width: $lg) {
+        grid-area: 1 / 1 / 5 / 3;
+        border-radius: 8px 0 0 8px;
+      }
+    }
+    &.imagen2 { 
+      grid-area: 2 / 1 / 3 / 2;
+      @media (min-width: $lg) {
+        grid-area: 1 / 3 / 3 / 5;
+      }
+    }
+    &.imagen3 { 
+      grid-area: 2 / 2 / 3 / 3; 
+      @media (min-width: $lg) {
+        grid-area: 1 / 5 / 3 / 7;
+        border-radius: 0 8px 0 0;
+      }
+    }
+    &.imagen4 { 
+      grid-area: 3 / 1 / 4 / 2; 
+      @media (min-width: $lg) {
+        grid-area: 3 / 3 / 4 / 4;
+      }
+    }
+    &.imagen5 { 
+      grid-area: 3 / 2 / 4 / 3; 
+      @media (min-width: $lg) {
+        grid-area: 4 / 3 / 5 / 4;
+      }
+    }
+    &.imagen6 { 
+      grid-area: 4 / 1 / 5 / 3;
+      border-radius: 0 0 8px 8px;
+      @media (min-width: $lg) {
+        grid-area: 3 / 4 / 5 / 7;
+        border-radius: 0 0 8px 0;
+      }
+    }
+  }
+}

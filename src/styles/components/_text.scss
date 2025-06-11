@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+
+h1 {
+  color: $verde !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  font-size: 3rem !important;
+}
+
+h2 {
+  color: $verde !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  font-size: 2rem !important;
+}

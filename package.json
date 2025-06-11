@@ -14,18 +14,20 @@
     "clean": "rm -rf .next out dist build"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.34.0",
     "bootstrap": "^5.3.6",
-    "next": "15.3.2",
+    "next": "15.3.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
-    "@types/node": "^22.15.21",
+    "@types/node": "^22.15.31",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "eslint": "^9.15.0",
-    "eslint-config-next": "15.3.2",
+    "eslint-config-next": "15.3.3",
+    "knip": "^5.60.2",
     "prettier": "^3.3.3",
     "sass": "^1.89.0",
     "typescript": "^5.8.3"

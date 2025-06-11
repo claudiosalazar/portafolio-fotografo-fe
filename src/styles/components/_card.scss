@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+
+.card {
+  background-color: transparent !important;
+
+  img {
+    border-radius: 6px;
+  }
+
+  .card-title {
+    color: $verde;
+  }
+
+  .card-text {
+    color: white;
+  }
+}

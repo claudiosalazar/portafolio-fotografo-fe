@@ -26,3 +26,12 @@ export interface ContactFormData {
   telefono: string;
   comentario: string;
 }
+
+// Tipos para Bootstrap
+declare global {
+  interface Window {
+    bootstrap: {
+      Carousel: new (element: Element, options?: any) => any;
+    };
+  }
+}
