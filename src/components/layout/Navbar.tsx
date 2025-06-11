@@ -16,9 +16,9 @@ export default function Navbar() {
   return (
     <header>
       <nav className={`navbar navbar-expand-md px-2 ${shouldApplyBgNavbar ? 'bg-navbar' : ''}`}>
-        <div className='container-fluid'>
+        <div className='container-fluid gx-1'>
           <Link className='navbar-brand' href='/'>
-            <span className='logo-nk'>
+            <span className='logo-nk ms-2'>
               {siteConfig.name}
             </span>
           </Link>
