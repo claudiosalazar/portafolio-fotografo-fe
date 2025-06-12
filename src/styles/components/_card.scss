@@ -7,11 +7,36 @@
     border-radius: 6px;
   }
 
-  .card-title {
-    color: $verde;
+  .card-body {
+    padding: 16px 0;
+
+    .card-date {
+      color: $gris-parrafo;
+      font-size: 0.875rem;
+      padding-bottom: 12px;
+      display: block;
+    }
+
+    .card-title {
+      color: $verde;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: .5rem;
+      padding-bottom: .5rem;
+    }
+
+    .card-text {
+      color: white;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.5;
+    }
   }
 
-  .card-text {
-    color: white;
-  }
 }

@@ -10,7 +10,7 @@ export default function Footer() {
           Nikonlas Canons © 2024 - V.1 
         </span>
         <span className='d-block'>
-          Desarrollo por <Link href='https://www.claudiosalazar.cl' className="link" target='_blank' rel='noopener noreferrer'>Claudio Salazar</Link>
+          Desarrollo por <Link href='https://www.claudiosalazar.cl' className="link-footer" target='_blank' rel='noopener noreferrer'>Claudio Salazar</Link>
         </span>
       </small>
       <ul>

@@ -35,11 +35,11 @@ export const navItems = [
     href: '/',
   },
   {
-    title: 'Biografia',
+    title: 'Biografía',
     href: '/biografia',
   },
   {
-    title: 'Galeria',
+    title: 'Galería',
     href: '/galeria',
   },
   {

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function GaleriaInicio() {
   return (
-    <div>
+    <div className='col-12'>
       <h2 className='mb-4'>Últimas fotografías</h2>
       <div className='galeria'>
         <Image
@@ -50,9 +50,11 @@ export default function GaleriaInicio() {
         />
       </div>
 
-      <Link href='/galeria' className='btn btn-primary mt-4 mb-5'>
-        Ver galería completa
-      </Link>
+      <div className='d-flex justify-content-center mt-4'>
+        <Link href='/galeria' className='btn btn-primary btn-large mt-4 mb-5'>
+          Ver galería completa
+        </Link>
+      </div>
     </div>
   );
 }
