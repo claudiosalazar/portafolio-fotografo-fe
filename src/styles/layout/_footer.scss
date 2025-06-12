@@ -13,7 +13,7 @@ footer {
   color: $gris-parrafo;
   padding-left: 36px;
   padding-right: 36px;
-  @media (min-width: $md) {
+  @media ($md < width) {
     height: 137px;
     margin-top: 0;
   }
@@ -21,7 +21,7 @@ footer {
   small {
     display: block;
     margin-top: 24px;
-    @media (min-width: $md) {
+    @media ($md < width) {
       margin-top: 34px;
     }
   }

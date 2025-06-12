@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { Anchor } from '@/components/ui';
-import { IconPlus } from '@tabler/icons-react';
 
 export default function CardPost() {
   return (

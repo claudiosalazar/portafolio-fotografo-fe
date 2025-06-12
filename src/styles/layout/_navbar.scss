@@ -5,7 +5,7 @@
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   border: 1px solid rgb(white, .3);
-  position: relative;
+  position: absolute;
   z-index: 1000;
   margin: 6px;
   border-radius: 6px;
@@ -46,7 +46,7 @@
     transition: transform .18s cubic-bezier(0, 0.55, 0.45, 1);
     @include animacionBoton;
 
-    @media (min-width: $md) {
+    @media ($md < width) {
       font-size: .875rem;
       line-height: 1.5rem;
       margin-bottom: inherit;

@@ -16,7 +16,7 @@ export default function Home() {
       <div className='container-fluid'>
         <Carousel />
       </div>
-      <section className='col-12'>
+      <section className='col-11 mx-auto col-md-12'>
         <div className='container'>
           <div className='row'>
             <div className='col-12 mb-5'>
@@ -35,7 +35,7 @@ export default function Home() {
               <CardPost />
             </div>
 
-            <div className='col-12 mb-5'>
+            <div className='col-12'>
               <div className='d-flex justify-content-center mt-4'>
                 <Link href='/galeria' className='btn btn-primary btn-large mt-4 mb-5'>
                   Ver más

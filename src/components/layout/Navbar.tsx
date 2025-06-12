@@ -14,7 +14,6 @@ export default function Navbar() {
   const shouldApplyBgNavbar = bgNavbar.includes(pathname);
 
   return (
-    <header>
       <nav className={`navbar navbar-expand-md px-2 ${shouldApplyBgNavbar ? 'bg-navbar' : ''}`}>
         <div className='container-fluid gx-1'>
           <Link className='navbar-brand' href='/'>
@@ -55,6 +54,5 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-    </header>
   );
 }

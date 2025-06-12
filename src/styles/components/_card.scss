@@ -2,6 +2,7 @@
 
 .card {
   background-color: transparent !important;
+  width: 100%;
 
   img {
     border-radius: 6px;
@@ -20,11 +21,14 @@
     .card-title {
       color: $verde;
       width: 100%;
-      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       margin-top: .5rem;
       padding-bottom: .5rem;
+
+      @media ($md < width) {
+        white-space: nowrap;
+      }
     }
 
     .card-text {
