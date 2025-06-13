@@ -13,35 +13,24 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <div className='container-fluid'>
+      <div className='contenedor-carousel'>
         <Carousel />
       </div>
-      <section className='col-11 mx-auto col-md-12'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12 mb-5'>
-              <GaleriaInicio />
-            </div>
 
-            <div className='col-12 col-md-4'>
-              <CardPost />
-            </div>
+      <section className='container'>
+        <div className='row'>
+          <div className='col-11 mx-auto col-md-12'>
+            <GaleriaInicio />
+          </div>
 
-            <div className='col-12 col-md-4'>
-              <CardPost />
-            </div>
-
-            <div className='col-12 col-md-4'>
-              <CardPost />
-            </div>
-
-            <div className='col-12'>
-              <div className='d-flex justify-content-center mt-4'>
-                <Link href='/galeria' className='btn btn-primary btn-large mt-4 mb-5'>
-                  Ver más
-                </Link>
-              </div>
-            </div>
+          <div className='col-11 mx-auto col-md-4'>
+            <CardPost />
+          </div>
+          <div className='col-11 mx-auto col-md-4'>
+            <CardPost />
+          </div>
+          <div className='col-11 mx-auto col-md-4'>
+            <CardPost />
           </div>
         </div>
       </section>

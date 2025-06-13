@@ -106,8 +106,8 @@ export default function RootLayout({
       </head>
       <body className={fontClasses}>
         <Navbar />
-        <main className='container-fluid g-0'>
-          <div className='row'>{children}</div>
+        <main>
+          {children}
         </main>
         <Footer />
         <Script

@@ -13,7 +13,7 @@ export default function CardPost() {
         <p className='card-text'>
           Durante mi carrera he tenido la oportunidad de colaborar con diversas revistas de naturaleza, pero uno de los proyectos más especiales fue cuando fui invitado a capturar la vida silvestre en una reserva ecológica en el norte del país. El desafío era no solo tomar fotografías espectaculares, sino también transmitir la magia de la naturaleza sin alterar su curso. Fue un trabajo de muchas horas, a veces bajo condiciones extremas, pero el resultado fue increíble. Las fotos se publicaron en la edición de invierno de la revista, y el reconocimiento fue un impulso para seguir explorando el mundo natural a través de mi cámara. Este proyecto me permitió descubrir una faceta más profunda de mi pasión, ya que pude conectar con los animales y paisajes de una manera muy íntima.
         </p>
-        <Anchor href="#" className="btn btn-secondary">
+        <Anchor href="#" className="btn btn-secondary align-items-center justify-content-center justify-content-md-start">
           Leer más
         </Anchor>
       </div>

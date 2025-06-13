@@ -60,13 +60,13 @@ export default function Carousel() {
     }
   };
   return (
-    <div id='carouselInicio' className='carousel slide carousel-fade position-relative'>
+    <div id='carouselInicio' className='carousel slide carousel-fade'>
       <div className='texto-bienvenida'>
-        <h1>Bienvenido a mi portafolio</h1>
-        <p>La fotografía es una forma de conectar con el mundo y expresar emociones sin palabras. Cada imagen tiene su propia historia y, a través del lente, se puede ver una realidad llena de matice. Mi objetivo es reflejar la esencia de lo que me rodea y transmitirla a quienes contemplan mi trabajo. Mi pasión me ha llevado a desarrollar un estilo único que se adapta a cada proyecto, buscando siempre la autenticidad y belleza. Si buscas capturar momentos especiales o dar vida a tu proyecto con imágenes de calidad, puedo ofrecerte mi experiencia y profesionalismo.</p>
+        <h1>Bienvenido a<br className='d-md-none' /> mi portafolio</h1>
+        <p className='lead'>La fotografía es una forma de conectar con el mundo y expresar emociones sin palabras. Cada imagen tiene su propia historia y, a través del lente, se puede ver una realidad llena de matice.</p>
       </div>
       <div className='carousel-inner h-100'>
-        <div className='carousel-item active position-relative h-100'>
+        <div className='carousel-item active h-100'>
           <Image
             src='/images/examples/robot-1.jpg'
             fill
@@ -75,7 +75,7 @@ export default function Carousel() {
             alt='Robot ejemplo 1'
           />
         </div>
-        <div className='carousel-item position-relative h-100'>
+        <div className='carousel-item h-100'>
           <Image
             src='/images/examples/robot-2.jpg'
             fill
@@ -84,7 +84,7 @@ export default function Carousel() {
             alt='Robot ejemplo 2'
           />
         </div>
-        <div className='carousel-item position-relative h-100'>
+        <div className='carousel-item h-100'>
           <Image
             src='/images/examples/robot-3.jpg'
             fill
@@ -97,7 +97,7 @@ export default function Carousel() {
 
       {/* Botón de pausa/reproducción para accesibilidad */}
       <button
-        className='control-carousel btn btn-outline-light position-absolute bottom-0 end-0 m-3 d-flex align-items-center justify-content-center'
+        className='control-carousel btn btn-outline-light bottom-0 end-0 m-3 d-flex align-items-center justify-content-center'
         onClick={togglePlayPause}
         aria-label={isPlaying ? 'Pausar carousel automático' : 'Reproducir carousel automático'}
         title={isPlaying ? 'Pausar' : 'Reproducir'}
