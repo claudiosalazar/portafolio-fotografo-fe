@@ -3,11 +3,13 @@ import { IconBrandLinkedin, IconBrandInstagram, IconBrandX, IconBrandFacebook } 
 import Link from 'next/link';
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer>
       <small className='d-flex justify-content-center align-items-center flex-column flex-md-row'>
         <span className='d-block pe-0'>
-          Nikonlas Canons © 2024 - V.1 
+          Nikonlas Canons © {currentYear} - V.1 
         </span>
         <span className='d-block ms-0 ms-md-2'>
           Desarrollo por <Link href='https://www.claudiosalazar.cl' className="link-footer" target='_blank' rel='noopener noreferrer'>Claudio Salazar</Link>

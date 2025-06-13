@@ -1,7 +1,7 @@
 {
-  "name": "Titulo del Proyecto",
-  "short_name": "Titulo Proyecto",
-  "description": "Descripción de proyecto.",
+  "name": "Nikolas Canons",
+  "short_name": "Nikolas Canons",
+  "description": "Portafolio de Nikolas Canons, un sitio web de ejemplo construido con Next.js, Bootstrap y TypeScript.",
   "start_url": "/?utm_source=homescreen",
   "icons": [
     {
@@ -22,6 +22,6 @@
   "display": "standalone",
   "orientation": "portrait",
   "lang": "es-CL",
-  "categories": ["Template", "Next.js", "React", "Bootstrap"],
+  "categories": ["photo", "Next.js", "React", "Bootstrap"],
   "scope": "/"
 }

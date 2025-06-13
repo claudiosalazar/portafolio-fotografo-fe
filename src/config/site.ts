@@ -3,7 +3,7 @@ import { SiteConfig } from '@/types';
 export const siteConfig: SiteConfig = {
   name: 'Nikolas Canons',
   description:
-    'Porfatolio de Nikolas Canons, un sitio web de ejemplo construido con Next.js, Bootstrap y TypeScript.',
+    'Portafolio de Nikolas Canons, un sitio web de ejemplo construido con Next.js, Bootstrap y TypeScript.',
   url: 'https://nk.claudiosalazar.cl',
   ogImage: 'https://nk.claudiosalazar.cl/images/opengraph.png',
   author: {

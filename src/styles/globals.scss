@@ -44,3 +44,14 @@ body {
 main {
   position: relative;
 }
+
+hr.logo {
+  width: 278px;
+  height: 24px;
+  margin: 52px auto;
+  border: 0;
+  opacity: .5;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='386' height='21' fill='none'%3E%3Cpath fill='%234E4F47' fill-rule='evenodd' d='M181.238 21h-6.97V0h6.58l7.481 9.27V0H196.385v7.86l6.14-7.86h8.393l-7.529 9.12L211.072 21h-8.608l-4.228-6.66-1.85 2.19V21h-7.336l-7.812-9.69V21Z' clip-rule='evenodd'/%3E%3Cpath stroke='%234E4F47' d='M151 10.5H0M386 10.5H235'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}

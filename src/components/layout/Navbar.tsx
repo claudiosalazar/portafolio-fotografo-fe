@@ -22,6 +22,16 @@ export default function Navbar() {
       setMenuClass("open-menu-mobile");
     }
   };
+
+  // Función para cerrar el menú cuando se hace clic en un enlace
+  const closeMenu = () => {
+    if (isMenuOpen) {
+      setMenuClass("close-menu-mobile");
+      setTimeout(() => {
+        setIsMenuOpen(false);
+      }, 500);
+    }
+  };
   
   // Rutas donde se debe aplicar la clase bg-navbar
   const bgNavbar = ['/', '/biografia'];
@@ -50,12 +60,13 @@ export default function Navbar() {
         </button>
         <div className='collapse navbar-collapse' id='navbarText'>
           <div className='d-flex justify-content-md-center align-md-items-center w-100'>
-            <ul className='navbar-nav mb-2 mb-lg-0'>
+            <ul className='navbar-nav mb-lg-0'>
               {navItems.map(item => (
                 <li key={item.href} className='nav-item mx-3'>
                   <Anchor
                     href={item.href}
                     className={`nav-link ${pathname === item.href ? 'active' : ''}`}
+                    onClick={closeMenu}
                   >
                     {item.title}
                   </Anchor>

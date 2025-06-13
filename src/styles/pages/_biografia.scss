@@ -1,0 +1,164 @@
+@use '../abstracts/variables' as *;
+
+.vitrina-biografia {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  top: 0;
+  aspect-ratio: 3/5;
+
+  .texto-vitrina {
+    position: absolute;
+    left: 24px;
+    bottom: 38px;
+    z-index: 1;
+
+    .logo-bio {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='24'%3E%3Cg fill='%23DF0' fill-rule='nonzero'%3E%3Cpath d='M.006 24H7.96V12.926L16.875 24h7.131V0h-7.954v10.594L7.515 0H.006z'/%3E%3Cpath d='M17.006 24h8.24v-5.109l2.112-2.502L32.182 24h9.824l-8.768-13.577L41.83 0h-9.578l-7.007 8.983V0h-8.239z'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 84px 48px;
+      width: 84px;
+      height: 66px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+      @media (min-width: $md) {
+        height: 48px;
+        border-bottom: 0;
+        margin-right: 16px;
+        border-left: 1px solid rgb(255, 255, 255, 0.5);
+      }
+    }
+
+    .nombre-bio {
+      padding-left: 0;
+      color: white;
+      height: 48px;
+      @media (min-width: $md) {
+        padding-left: 15px;
+        border-left: 1px solid rgb(255, 255, 255, 0.5);
+      }
+
+      .presentacion {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 0.8;
+      }
+      .nombre {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.7;
+      }
+    }
+
+    p {
+      width: 100%;
+      @media (min-width: $md) {
+        width: 50%;
+        color: white;
+      }
+    }
+
+    @media ($md < width) {
+      bottom: 12px;
+    }
+
+    @media ($lg < width) {
+      left: 52px;
+      bottom: 38px;
+    }
+  }
+
+  @media ($md < width) {
+    aspect-ratio: 4/3;
+  }
+
+  @media ($lg < width) {
+    aspect-ratio: 16/7;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/5;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    
+    @media ($md < width) {
+      aspect-ratio: 4/3;
+    }
+
+    @media ($lg < width) {
+      aspect-ratio: 16/7;
+    }
+  }
+}
+
+.biografia {
+
+  .camera {
+    width: 60%;
+    height: auto;
+    padding-top: 42px;
+    object-fit: cover;
+    position: inherit !important;
+    @media (min-width: $md) {
+      margin: 0 auto;
+      width: 70% !important;
+      height: fit-content !important;
+    }
+  }
+
+  .lista-proyectos {
+    padding: 0;
+    list-style: none;
+
+    span {
+      color: $link;
+      font-weight: 300;
+    }
+
+    h5 {
+      padding: 10px 0 16px 0;
+      color: $link;
+      font-size: 1.05rem;
+      line-height: 1.3rem;
+      text-transform: uppercase;
+      color: $verde;
+      font-weight: 600;
+    }
+
+    p.txt-proyecto {
+      font-size: 0.9rem;
+      margin-bottom: 36px;
+    }
+  }
+
+  .rrss {
+    padding: 0;
+    margin: 0;
+
+    a {
+      color: $link ;
+      margin-bottom: 24px;
+      text-decoration: none;
+    
+      .separador {
+        color: $gris-parrafo;
+      }
+
+      &:hover {
+        color: $verde;
+      }
+    }
+  }
+
+  @media ($lg < width) {
+    background-image: url('../../../public/images/biografia/bg-camera-1.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  
+}

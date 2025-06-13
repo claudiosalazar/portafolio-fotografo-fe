@@ -5,9 +5,10 @@ interface AnchorProps {
   href: string;
   children: React.ReactNode;
   className?: string;
+  onClick?: () => void;
 }
 
-export default function Anchor({ href, children, className = '' }: AnchorProps) {
+export default function Anchor({ href, children, className = '', onClick }: AnchorProps) {
   const linkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
@@ -31,6 +32,7 @@ export default function Anchor({ href, children, className = '' }: AnchorProps) 
       ref={linkRef}
       className={className} 
       href={href}
+      onClick={onClick}
     >
       {children}
     </Link>
