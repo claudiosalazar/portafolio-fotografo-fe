@@ -19,6 +19,10 @@ const nextConfig: NextConfig = {
     includePaths: ['./src/styles'],
     prependData: `@use "src/styles/abstracts/variables" as *;`,
     quietDeps: true, // Suprime warnings de SCSS en dependencias
+    silenceDeprecations: ['legacy-js-api'], // Suprime warnings de deprecación
+    logger: {
+      warn: () => {}, // Suprime todos los warnings de SASS
+    },
   },
 };
 
