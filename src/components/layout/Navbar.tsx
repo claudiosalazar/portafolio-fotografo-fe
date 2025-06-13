@@ -32,13 +32,9 @@ export default function Navbar() {
       }, 500);
     }
   };
-  
-  // Rutas donde se debe aplicar la clase bg-navbar
-  const bgNavbar = ['/', '/biografia'];
-  const shouldApplyBgNavbar = bgNavbar.includes(pathname);
 
   return (
-    <nav className={`navbar navbar-expand-md px-2 ${shouldApplyBgNavbar ? 'bg-navbar' : ''}`}>
+    <nav className="navbar navbar-expand-md px-2">
       <div className='container-fluid gx-1'>
         <Link className='navbar-brand' href='/'>
           <span className='logo-nk ms-2'>

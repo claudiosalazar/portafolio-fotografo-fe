@@ -3,9 +3,10 @@
 h1 {
   color: $verde !important;
   text-transform: uppercase;
-  font-weight: 300 !important;
+  font-weight: 200 !important;
   font-size: 3rem !important;
   line-height: 2.5rem !important;
+  letter-spacing: 0.5rem;
 
   @media ($lg < width) {
     font-size: 4rem !important;

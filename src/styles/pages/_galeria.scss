@@ -1,0 +1,130 @@
+@use '../abstracts/variables' as *;
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  @media ($md < width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .paisajes { 
+    grid-area: 1 / 1 / 2 / 2;
+    aspect-ratio: 16/9;
+
+    @media ($md < width) {
+      grid-area: 1 / 1 / 2 / 2;
+      aspect-ratio: 16/7;
+    }
+
+    img {
+      border-radius: 8px 8px 0 0;
+
+      @media ($md < width) {
+        border-radius: 8px 0 0 0;
+      }
+    }
+  }
+
+  .personas { 
+    grid-area: 2 / 1 / 3 / 2;
+    aspect-ratio: 16/9;
+
+    @media ($md < width) {
+      grid-area: 1 / 2 / 2 / 2;
+      aspect-ratio: 16/7;
+    }
+
+    img {
+      @media ($md < width) {
+        border-radius: 0 8px 0 0 ;
+      }
+    }
+  }
+
+  .animales { 
+    grid-area: 3 / 1 / 4 / 2;
+    aspect-ratio: 16/9;
+
+    @media ($md < width) {
+      grid-area: 2 / 1 / 3 / 2;
+      aspect-ratio: 16/7;
+    }
+
+    img {
+      @media ($md < width) {
+        border-radius: 0 0 0 8px;
+      }
+    }
+  }
+
+  .deporte { 
+    grid-area: 4 / 1 / 5 / 2;
+    aspect-ratio: 16/9;
+
+    @media ($md < width) {
+      grid-area: 2 / 2 / 3 / 3;
+      aspect-ratio: 16/7;
+    }
+
+    img {
+      border-radius: 0 0 8px 8px;
+
+      @media ($md < width) {
+        border-radius: 0 0 8px 0;
+      }
+    }
+  }
+
+  .link-galeria-inicio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      z-index: 0;
+      position: absolute;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    span {
+      position: absolute;
+      z-index: 1;
+      font-size: 3rem;
+      font-weight: 200;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(0%);
+      }
+
+      span {
+        color: $verde;
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+
+  
+  
+}

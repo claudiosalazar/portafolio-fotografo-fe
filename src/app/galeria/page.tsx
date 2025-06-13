@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { siteConfig } from '@/config/site';
 
@@ -12,93 +13,34 @@ export default function Product() {
       <section className='col-12'>
         <div className='container mt-4'>
           <div className='row'>
-            <div className='col-12'>
-              <h1 className='mb-4'>Productos</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                eu feugiat dolor, a hendrerit elit. Etiam eget facilisis purus.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos.
-              </p>
+            <div className='col-11 mx-auto col-md-12 pt-5 pb-4'>
+              <h1 className='pt-5'>Galería</h1>
             </div>
-            <div className='col-12 col-md-6 col-lg-3 pb-4'>
-              <div className='card'>
-                <Image
-                  src='/images/examples/robot-1.jpg'
-                  alt='Imagen de ejemplo'
-                  width={800}
-                  height={400}
-                  className='img-fluid'
-                />
-                <div className='card-body'>
-                  <h5 className='card-title'>Nombre producto</h5>
-                  <p className='card-text'>
-                    Precio <strong>$ 10.000</strong>
-                  </p>
-                  <a href='#' className='btn btn-primary'>
-                    Comprar
-                  </a>
-                </div>
+
+            <div className="col-11 mx-auto col-md-12 galeria my-5">
+              <div className='paisajes'>
+                <Link href="/galeria/paisajes" className="link-galeria-inicio">
+                  <span>Paisajes</span>
+                  <Image src='/images/galeria/g-paisajes.jpg' alt='Imagen de ejemplo' width={800} height={400} className='img-fluid' />
+                </Link>
               </div>
-            </div>
-            <div className='col-12 col-md-6 col-lg-3 pb-4'>
-              <div className='card'>
-                <Image
-                  src='/images/examples/robot-1.jpg'
-                  alt='Imagen de ejemplo'
-                  width={800}
-                  height={400}
-                  className='img-fluid'
-                />
-                <div className='card-body'>
-                  <h5 className='card-title'>Nombre producto</h5>
-                  <p className='card-text'>
-                    Precio <strong>$ 10.000</strong>
-                  </p>
-                  <a href='#' className='btn btn-primary'>
-                    Comprar
-                  </a>
-                </div>
+              <div className='personas'>
+                <Link href="/galeria/personas" className="link-galeria-inicio">
+                  <span>Personas</span>
+                  <Image src='/images/galeria/g-personas.jpg' alt='Imagen de ejemplo' width={800} height={400} className='img-fluid' />
+                </Link>
               </div>
-            </div>
-            <div className='col-12 col-md-6 col-lg-3 pb-4'>
-              <div className='card'>
-                <Image
-                  src='/images/examples/robot-1.jpg'
-                  alt='Imagen de ejemplo'
-                  width={800}
-                  height={400}
-                  className='img-fluid'
-                />
-                <div className='card-body'>
-                  <h5 className='card-title'>Nombre producto</h5>
-                  <p className='card-text'>
-                    Precio <strong>$ 10.000</strong>
-                  </p>
-                  <a href='#' className='btn btn-primary'>
-                    Comprar
-                  </a>
-                </div>
+              <div className='animales'>
+                <Link href="/galeria/animales" className="link-galeria-inicio">
+                  <span>Animales</span>
+                  <Image src='/images/galeria/g-animales.jpg' alt='Imagen de ejemplo' width={800} height={400} className='img-fluid' />
+                </Link>
               </div>
-            </div>
-            <div className='col-12 col-md-6 col-lg-3 pb-4'>
-              <div className='card'>
-                <Image
-                  src='/images/examples/robot-1.jpg'
-                  alt='Imagen de ejemplo'
-                  width={800}
-                  height={400}
-                  className='img-fluid'
-                />
-                <div className='card-body'>
-                  <h5 className='card-title'>Nombre producto</h5>
-                  <p className='card-text'>
-                    Precio <strong>$ 10.000</strong>
-                  </p>
-                  <a href='#' className='btn btn-primary'>
-                    Comprar
-                  </a>
-                </div>
+              <div className='deporte'>
+                <Link href="/galeria/deporte" className="link-galeria-inicio">
+                  <span>Deporte</span>
+                  <Image src='/images/galeria/g-paisajes.jpg' alt='Imagen de ejemplo' width={800} height={400} className='img-fluid' />
+                </Link>
               </div>
             </div>
           </div>

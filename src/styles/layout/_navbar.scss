@@ -11,6 +11,9 @@ nav {
     z-index: 100;
     margin: 6px;
     border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     .btn-menu-mobile {
       z-index: 8000;
@@ -86,12 +89,6 @@ nav {
         width: calc(100% - 24px) !important;
         margin: auto;
       }
-    }
-
-    &.bg-navbar {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .navbar-brand {
