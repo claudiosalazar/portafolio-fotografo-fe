@@ -19,14 +19,6 @@ export interface NavItem {
   external?: boolean;
 }
 
-// Tipos para formularios
-export interface ContactFormData {
-  nombre: string;
-  email: string;
-  telefono: string;
-  comentario: string;
-}
-
 // Tipos para Bootstrap
 declare global {
   interface Window {
