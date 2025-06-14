@@ -57,10 +57,10 @@ export default function Blog() {
   return (
     <>
       <section className='col-12'>
-        <div className='container mt-4'>
+        <div className='container'>
           <div className='row'>
             <div className='col-12 py-5'>
-              <h1 className='pt-5'>Blog</h1>
+              <h1>Blog</h1>
             </div>
             {posts.map((post, index) => (
               <div key={index} className='col-11 mx-auto col-md-4'>

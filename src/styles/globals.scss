@@ -29,8 +29,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: grid;
-  min-height: 100svh;
+  min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
   font-weight: 400;
   position: relative;
 }
@@ -43,6 +47,7 @@ body {
 
 main {
   position: relative;
+  grid-area: main;
 }
 
 hr.logo {

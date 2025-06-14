@@ -3,8 +3,9 @@
 
 nav {
   width: 100%;
-  position: absolute !important;
+  position: relative;
   z-index: 5000;
+  grid-area: header;
 
   &.navbar {
     width: calc(100% - 12px);
