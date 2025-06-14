@@ -5,10 +5,10 @@ import { siteConfig } from '@/config/site';
 import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconMail, IconDeviceMobile } from '@tabler/icons-react';
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} | Quienes Somos`,
+  title: `${siteConfig.name} | Briografía`,
 };
 
-export default function About() {
+export default function Biografia() {
   return (
     <>
       <div className='vitrina-biografia mb-5'>

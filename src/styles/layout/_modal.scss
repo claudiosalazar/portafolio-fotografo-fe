@@ -1,0 +1,145 @@
+@use '../abstracts/variables' as *;
+
+/*.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(black, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9000;
+    background: rgb(black, 0.85);
+    cursor: default;
+  }
+
+  .custom-scrollbar {
+    border: 1px solid red;
+    width: 12px;
+    margin-right: 12px;
+    height: 50%;
+    transform: translateY(50%);
+    background-color: rgb(white, 0.8);
+    position: fixed;
+    right: 20px; // Posicionamiento fijo a la derecha
+    z-index: 5100; // Asegurar que esté sobre otros elementos
+  }
+
+  .modal-content-scroll {
+    position: relative;
+    width: 90%;
+    max-height: 90svh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 0;
+    border-radius: 6px;
+    cursor: default;
+
+    @media ($lg < width) {
+      width: 80%;
+    }
+
+    .btn-cerrar-modal {
+      position: sticky;
+      top: 12px;
+      right: 12px;
+      z-index: 1000;
+      border: none;
+      cursor: pointer;
+      color: $verde;
+      background: transparent;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+      align-self: flex-end;
+      margin-right: 12px;
+      margin-bottom: -46px;
+
+      &:hover {
+        color: white;
+        transform: scale(1.05);
+        background-color: rgb(black, .8);
+      }
+    }
+    
+    
+    .image-container {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  // ======================================
+  // Contenido del modal
+  // ======================================
+  .modal-content {
+    position: relative;
+    width: fit-content;
+    max-width: 95vw;
+    max-height: 95svh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .modal-image-scroll {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
+    margin-top: 0; // Eliminar cualquier margen superior
+    align-self: flex-start; // Alinear al inicio del contenedor flex
+    transform: translateY(0); // Asegurar que no haya transformaciones que muevan la imagen
+  }
+
+  .modal-image {
+    height: auto;
+    max-height: 90lvh;
+    max-width: 100%;
+    object-fit: contain;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .modal-text {
+    display: none;
+
+    @media ($sm < width) {
+      display: block;
+      position: absolute;
+      background-color: rgb(white, 0.8);
+      margin: 10px 0 0 10px;
+      border-radius: 14px;
+      
+      p {
+        padding: 12px 16px;
+        font-size: 1.4rem !important;
+        text-transform: inherit;
+        font-weight: 300;
+        color: black;
+      }
+    }
+  }
+}*/

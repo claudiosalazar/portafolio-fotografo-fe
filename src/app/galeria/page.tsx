@@ -4,10 +4,10 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} | Productos`,
+  title: `${siteConfig.name} | Galeria`,
 };
 
-export default function Product() {
+export default function GaleriaInicio() {
   return (
     <>
       <section className='col-12'>
@@ -17,7 +17,7 @@ export default function Product() {
               <h1 className='pt-5'>Galería</h1>
             </div>
 
-            <div className="col-11 mx-auto col-md-12 galeria my-5">
+            <div className="col-11 mx-auto col-md-12 galeria-inicio my-5">
               <div className='paisajes'>
                 <Link href="/galeria/paisajes" className="link-galeria-inicio">
                   <span>Paisajes</span>
@@ -31,8 +31,8 @@ export default function Product() {
                 </Link>
               </div>
               <div className='animales'>
-                <Link href="/galeria/animales" className="link-galeria-inicio">
-                  <span>Animales</span>
+                <Link href="/galeria/fauna" className="link-galeria-inicio">
+                  <span>Fauna</span>
                   <Image src='/images/galeria/g-animales.jpg' alt='Imagen de ejemplo' width={800} height={400} className='img-fluid' />
                 </Link>
               </div>
